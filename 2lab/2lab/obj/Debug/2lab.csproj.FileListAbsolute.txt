@@ -1,0 +1,7 @@
+E:\uni\2\1s\oop13\paws\2lab\2lab\bin\Debug\2lab.exe.config
+E:\uni\2\1s\oop13\paws\2lab\2lab\bin\Debug\2lab.exe
+E:\uni\2\1s\oop13\paws\2lab\2lab\bin\Debug\2lab.pdb
+E:\uni\2\1s\oop13\paws\2lab\2lab\obj\Debug\2lab.csprojAssemblyReference.cache
+E:\uni\2\1s\oop13\paws\2lab\2lab\obj\Debug\2lab.csproj.CoreCompileInputs.cache
+E:\uni\2\1s\oop13\paws\2lab\2lab\obj\Debug\2lab.exe
+E:\uni\2\1s\oop13\paws\2lab\2lab\obj\Debug\2lab.pdb
