@@ -1,0 +1,7 @@
+E:\uni\2\1s\oop13\paws(не репо)\lab3\lab3\obj\Debug\lab3.csprojAssemblyReference.cache
+E:\uni\2\1s\oop13\paws(не репо)\lab3\lab3\obj\Debug\lab3.csproj.CoreCompileInputs.cache
+E:\uni\2\1s\oop13\paws(не репо)\lab3\lab3\bin\Debug\lab3.exe.config
+E:\uni\2\1s\oop13\paws(не репо)\lab3\lab3\bin\Debug\lab3.exe
+E:\uni\2\1s\oop13\paws(не репо)\lab3\lab3\bin\Debug\lab3.pdb
+E:\uni\2\1s\oop13\paws(не репо)\lab3\lab3\obj\Debug\lab3.exe
+E:\uni\2\1s\oop13\paws(не репо)\lab3\lab3\obj\Debug\lab3.pdb
