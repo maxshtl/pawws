@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 	+	Класс - стек Stack. Дополнительно перегрузить следующие операции: + - добавить элемент в стек; -- - извлечь элемент из
 	стека; true - проверка, пустой ли стек; > - копирование одного стека в другой с сортировкой в возрастающем порядке.
 
-	+?2) Добавьте в свой класс вложенный объект Owner, который содержит Id, имя и организацию создателя. Проинициализируйте его
+	+2) Добавьте в свой класс вложенный объект Owner, который содержит Id, имя и организацию создателя. Проинициализируйте его
 
 	+3) Добавьте в свой класс вложенный класс Date (дата создания). Проинициализируйте.
 
@@ -32,16 +32,16 @@ namespace lab4
 		public int maxSize = 10;
 		public int value { get; set; }
 
-		private class Owner 
+		public class Owner 
 		{
 			long id = 1235786554688;
 			string name = "Rykhlionak A.";
 			string organization = "Oooooo";
 		}
 
-		private class Date
+		public class Date
 		{
-			double date = 11.10;
+			string date = Convert.ToString(DateTime.Now);
 		}
 
 		public Stack ()
@@ -94,7 +94,21 @@ namespace lab4
 
 		public static Stack operator <(Stack myStack, Stack secondStack)
 		{
-			Console.WriteLine("someBODY ONCE TOLD ME-");
+			for (int i = 0; i < myStack.currentsize; i++)
+			{
+				secondStack.arrayData[secondStack.currentsize] = myStack.arrayData[i];
+				for (int j = secondStack.currentsize; j - 1 >= 0; j--)
+				{
+
+					if (secondStack.arrayData[j] > secondStack.arrayData[j - 1])
+					{
+						int temp = secondStack.arrayData[j];
+						secondStack.arrayData[j] = secondStack.arrayData[j - 1];
+						secondStack.arrayData[j - 1] = temp;
+					}
+				}
+				secondStack.currentsize++;
+			}
 			return secondStack;
 		}
 
@@ -117,7 +131,7 @@ namespace lab4
 
 		public static int Length(Stack myStack)
 		{
-			return myStack.arrayData.Length;
+			return myStack.currentsize;
 		}
 
 		public static int Dif(Stack myStack)
@@ -127,13 +141,12 @@ namespace lab4
 
 		public static string Count(this string s)
 		{
-			// int count = 0; count.ToString()
 			string[] count_string = s.Split('.');
 			return count_string.Length.ToString();
 		}
 		public static double MidElem(this Stack myStack)
 		{
-			return myStack.arrayData.Sum()/myStack.currentsize;
+			return myStack.arrayData[myStack.currentsize/2];
 		}
 	}
 
@@ -141,19 +154,21 @@ namespace lab4
 	{
 		static void Main(string[] args)
 		{
+
 			Stack myStack = new Stack();
 			Console.WriteLine("Добавление:");
 			Console.WriteLine(4 + myStack);
 			Console.WriteLine(7 + myStack);
-			Console.WriteLine(0 + myStack);
 			Console.WriteLine(9 + myStack);
+			Console.WriteLine(-3 + myStack);
 			Console.WriteLine(15 + myStack);
+			Console.WriteLine(15 + myStack);
+			Console.WriteLine("Стек::");
 			myStack.Show();
 
-			Console.WriteLine("Дикремент и тру:");
+			Console.WriteLine("Дикремент и true:");
 			myStack--;
 			myStack.Show();
-			Console.WriteLine(myStack);//true??????
 
 			Console.WriteLine("Второй стек:");
 			Stack secondStack = new Stack();
@@ -164,7 +179,7 @@ namespace lab4
 			Console.WriteLine(StatisticOperation.Sum(myStack));
 			Console.WriteLine(StatisticOperation.Length(myStack)); 
 			Console.WriteLine(StatisticOperation.Dif(myStack));
-			Console.WriteLine(StatisticOperation.Count("I.DONT.WANNA.BE.ME"));
+			Console.WriteLine(StatisticOperation.Count("I.WANT.EAT"));
 			Console.WriteLine(StatisticOperation.MidElem(myStack));
 			Console.ReadKey();
 		}
