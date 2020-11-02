@@ -266,6 +266,8 @@ namespace lab6
 			control.SeaEncouter();
 			control.SortIslands(islands);
 
+			fourth_sea.GetHashCode();
+
 
 			Console.ReadKey();
 		}
