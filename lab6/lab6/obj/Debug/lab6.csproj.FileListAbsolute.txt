@@ -18,3 +18,10 @@ E:\uni\3s\oop13\lab6\lab6\obj\Debug\lab6.csprojAssemblyReference.cache
 E:\uni\3s\oop13\lab6\lab6\obj\Debug\lab6.csproj.CoreCompileInputs.cache
 E:\uni\3s\oop13\lab6\lab6\obj\Debug\lab6.exe
 E:\uni\3s\oop13\lab6\lab6\obj\Debug\lab6.pdb
+E:\uni\3s\oop13\pawws\lab6\lab6\bin\Debug\lab6.exe.config
+E:\uni\3s\oop13\pawws\lab6\lab6\bin\Debug\lab6.exe
+E:\uni\3s\oop13\pawws\lab6\lab6\bin\Debug\lab6.pdb
+E:\uni\3s\oop13\pawws\lab6\lab6\obj\Debug\lab6.csprojAssemblyReference.cache
+E:\uni\3s\oop13\pawws\lab6\lab6\obj\Debug\lab6.csproj.CoreCompileInputs.cache
+E:\uni\3s\oop13\pawws\lab6\lab6\obj\Debug\lab6.exe
+E:\uni\3s\oop13\pawws\lab6\lab6\obj\Debug\lab6.pdb
